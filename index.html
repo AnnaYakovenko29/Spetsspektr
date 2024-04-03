@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speczspektor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+/>
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <!--HEADER-->
+        <header class="header">
+          <div class="container">
+            <div class="header-container">
+                <a class="header-logo link" href="">
+                    <img
+                      class="header-logo logo"
+                      src="./img/logo-speczspektor-des.svg"
+                      alt="логотип"
+                    />
+                </a>
+                <div class="header-container-wrap">
+                    <a class="header-phone-link link" href="tel:+38 067 444 04 58"
+                    >+38 067 444 04 58</a
+                >
+                <div class="header-language">
+                    <div class="header-language-flag">
+                        <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 2.5C0 1.39543 0.895431 0.5 2 0.5H18C19.1046 0.5 20 1.39543 20 2.5V6.5H0V2.5Z" fill="#0057B7" />
+                            <path d="M0 6.5H20V10.5C20 11.6046 19.1046 12.5 18 12.5H2C0.895431 12.5 0 11.6046 0 10.5V6.5Z" fill="#FFD700" />
+                        </svg>
+                    </div>
+                    <p class="header-language-text">UA</p>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10.5L12 15.5L17 10.5H7Z" fill="white" />
+                    </svg>
+                </div>
+                <button class="header-button button-connection button" type="button" data-modal-open>Передзвоніть мені</button>
+                </div>
+                <div class="mobile-menu-button">
+                    <button
+                      class="header-mobile-menu-button menu-open"
+                      type="button"
+                      data-menu-open
+                    >
+                    <svg class="header-mobile-menu-open-svg" width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.125 1.125H16.875M1.125 6H16.875M1.125 10.875H16.875" stroke="white" stroke-width="2.25" stroke-miterlimit="10" stroke-linecap="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mobile-menu is-hidden" data-menu>
+                    <div class="mobile-menu-button">
+                        <button
+                        class="header-mobile-menu-button menu-close"
+                        type="button"
+                        data-menu-close
+                      >
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.10645 6.64645L7.75289 7L8.10645 7.35355L13.5 12.7471V13.5H12.7471L7.35355 8.10645L7 7.75289L6.64645 8.10645L1.25289 13.5H0.5V12.7471L5.89355 7.35355L6.24711 7L5.89355 6.64645L0.5 1.25289V0.5H1.25289L6.64645 5.89355L7 6.24711L7.35355 5.89355L12.7471 0.5H13.5V1.25289L8.10645 6.64645Z" fill="white" stroke="white" />
+                      </svg>
+                      </button>
+                    </div>
+                    <div class="header-container-wrap-mob">
+                        <a class="header-phone-link link" href="tel:+38 067 444 04 58"
+                        >+38 067 444 04 58</a
+                    >
+                    <div class="header-language">
+                        <div class="header-language-flag">
+                            <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 2.5C0 1.39543 0.895431 0.5 2 0.5H18C19.1046 0.5 20 1.39543 20 2.5V6.5H0V2.5Z" fill="#0057B7" />
+                                <path d="M0 6.5H20V10.5C20 11.6046 19.1046 12.5 18 12.5H2C0.895431 12.5 0 11.6046 0 10.5V6.5Z" fill="#FFD700" />
+                            </svg>
+                        </div>
+                        <p class="header-language-text">UA</p>
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10.5L12 15.5L17 10.5H7Z" fill="white" />
+                        </svg>
+                    </div>
+                    <button class="header-button-mob button-connection button" type="button" data-modal-open>Передзвоніть мені</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                  <div class="hero-container">
+                    <h1 class="hero-title">Відкрий свій бізнес</h1>
+                    <p class="hero-text">надання послуг контролю шкідників </p>
+                    <button class="hero-button button-getpresentation button" type="button">Отримати презентацію</button>
+                    <div class="container-decor">
+                        <img class="hero-decor" src="./img/hero-decor.svg" alt="декоративний елемент">
+                        <img class="hero-img" src="./img/hero-photo.svg" alt="фонове зображення">
+                    </div>
+
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about-container">
+                        <img class="about-decor" src="./img/about-decor.svg" alt="декоративний елемент">
+                        <div class="about-container-text">
+                            <h2 class="about-title">СПЕЦСПЕКТР - це</h2>
+                            <p class="about-text">Компанія, яка славиться своєю ефективністю в боротьбі зі шкідниками та проведенні дезінфекції приміщень. Експерти цієї компанії мають багаторічний досвід у виявленні та ефективному усуненні різноманітних видів шкідників. <br><br> Клієнти високо цінують професіоналізм та індивідуальний підхід до кожного. Завдяки високоякісним послугам та надійному підходу, компанія заробила довіру та повагу на ринку дезінфекційних послуг.</p>
+                        </div>
+                        <ul class="about-list list">
+                            <li class="about-item">17+ років досвіду</li>
+                            <li class="about-item">7+ міст</li>
+                            <li class="about-item">50+ людей у команді</li>
+                            <li class="about-item">5000+ задоволених клієнтів</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <div class="services-container">
+                        <h2 class="services-title">Наші послуги</h2>
+                        <ul class="services-list list">
+                            <li class="services-item" data-text="Таргани, Клопи">
+                                <img class="services-img" src="./img/servises/services-1.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="Мухи, Міль">
+                                <img class="services-img" src="/img/servises/services-2.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="Дезинсекція зерносховищ">
+                                <img class="services-img" src="./img/servises/services-3.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="Фумігація">
+                                <img class="services-img" src="./img/servises/services-4.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="HACCP, ISO, BRC">
+                                <img class="services-img" src="./img/servises/services-5.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="Гризуни">
+                                <img class="services-img" src="./img/servises/services-6.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="Птахи">
+                                <img class="services-img" src="./img/servises/services-7.jpg" alt="фото послуги">
+                            </li>
+                            <li class="services-item" data-text="Комарі">
+                                <img class="services-img" src="./img/servises/services-8.jpg" alt="фото послуги">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div class="container">
+                    <div class="map-container">
+                        <div class="map-container-description">
+                            <h2 class="map-title">Мапа франчайзингу СПЕЦСПЕКТР</h2>
+                            <p class="map-text">Мапа франчайзингу Спецспектр відображає широку географічну розгалуженість бренду по Україні та у інших країнах. Ця мапа демонструє розташування всіх франчайзі, які успішно працюють під брендом Спецспектр. <br><br>
+                            Вона служить як інструмент для потенційних підприємців, що бажають приєднатися до мережі франчайзингу, допомагаючи їм знайти потенційні місця для відкриття нових підрозділів. Мапа франчайзингу Спецспектр є стратегічним інструментом у розвитку мережі та розширенні її присутності на ринку.</p>
+                            <button class="button-getpresentation button">Отримати презентацію</button>
+                        </div>
+                            <div class="map-container-map">
+                                <div class="map-container-map-button">
+                                    <button class="map-button map-button-ua" type="button">Україна</button>
+                                    <button class="map-button map-button-world" type="button">Увесь світ</button>
+                                </div>
+                                <img class="map-img-ua" src="./img/map-ua.svg" alt="карта україни">
+                                <!-- <img class="map-img-world" src="" alt="карта світу"> -->
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                  <div class="advantages-container">
+                    <svg class="advantages-decor-mob" width="300" height="462" viewBox="0 0 300 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M214.248 92.7825C231.276 112.489 229.132 145.798 211.437 183.991C193.77 222.121 160.709 264.855 116.422 303.123C72.1361 341.39 25.0593 367.904 -15.2307 379.854C-55.5861 391.823 -88.8539 389.113 -105.882 369.407C-122.91 349.701 -120.766 316.392 -103.071 278.199C-85.404 240.068 -52.3428 197.334 -8.05656 159.067C36.2297 120.799 83.3065 94.2852 123.596 82.3356C163.952 70.3666 197.22 73.0761 214.248 92.7825Z" stroke="#55C1E1" stroke-opacity="0.19" stroke-width="1.34657" />
+                        <path d="M257.305 171.998C264.581 197.006 248.761 226.397 216.769 253.752C184.828 281.063 136.975 306.148 80.7757 322.498C24.5765 338.849 -29.2653 343.351 -70.8719 337.438C-112.546 331.515 -141.664 315.199 -148.94 290.191C-156.215 265.184 -140.396 235.793 -108.403 208.438C-76.4627 181.127 -28.6093 156.042 27.5898 139.691C83.789 123.341 137.631 118.839 179.237 124.752C220.912 130.674 250.03 146.991 257.305 171.998Z" stroke="#55C1E1" stroke-opacity="0.19" stroke-width="1.34657" />
+                      </svg>
+                      <svg class="advantages-decor-des" width="1062" height="996" viewBox="0 0 1062 996" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M858.203 158.814C899.913 199.15 901.788 273.489 870.129 361.761C838.521 449.89 773.67 551.299 683.021 645.033C592.373 738.767 493.192 806.975 406.169 841.515C319.006 876.111 244.646 876.724 202.937 836.387C161.227 796.051 159.351 721.712 191.011 633.44C222.619 545.311 287.47 443.902 378.119 350.168C468.767 256.434 567.948 188.226 654.97 153.686C742.134 119.09 816.494 118.477 858.203 158.814Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="3" />
+                        <path d="M969.521 326.016C990.645 380.058 961.395 448.425 895.853 515.497C830.417 582.46 729.228 647.652 607.781 695.126C486.333 742.599 367.757 763.312 274.256 758.477C180.603 753.634 112.742 723.227 91.6173 669.185C70.4927 615.144 99.7431 546.776 165.285 479.705C230.721 412.742 331.91 347.549 453.357 300.076C574.805 252.602 693.381 231.89 786.882 236.725C880.535 241.568 948.396 271.975 969.521 326.016Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="3" />
+                      </svg>
+                    <h2 class="advantages-title">Чому СПЕЦСПЕКТР?</h2>
+                    <ul class="advantages-list list">
+                        <li class="advantages-item">
+                            <img class="advantages-img" src="/img/advantages/advantages-1.jpg" alt="зображення переваг">
+                            <h3 class="advantages-item-title">Досвідчена команда фахівців</h3>
+                            <p class="advantages-item-text">Ми на власному досвіді та ціною власних помилок збудували стабільну компанію, що на сьогодні є лідером надання послуг контролю шкідників в Україні. Тепер Вам більше не треба проходити складний і довгий шлях становлення, адже ставши нашим франчайзі Ви можете використовувати наш безцінний досвід.</p>
+                            <button class="advantages-item-read-more">Читати далі</button>
+                        </li>
+                        <li class="advantages-item">
+                            <img class="advantages-img" src="./img/advantages/advantages-2.jpg" alt="зображення переваг">
+                            <h3 class="advantages-item-title">Перевірені препарати та обладнання</h3>
+                            <p class="advantages-item-text">За час своєї діяльності ми спробували та проаналізували сотні інсектицидів, родентицидів, альтернативних методів та технологій контролю шкідників та залишили в своєму арсеналі найбільш оптимальні та ефективні. Зараз ми використовуєм тільки надійні та найбільш безпечні методи боротьби зі шкідниками та та обладнання найкращих світових виробників, ми з радістю ділимось цими знаннями зі своїми франчайзі</p>
+                            <button class="advantages-item-read-more">Читати далі</button>
+                        </li>
+                        <li class="advantages-item">
+                            <img class="advantages-img" src="./img/advantages/advantages-3.jpg" alt="зображення переваг">
+                            <h3 class="advantages-item-title">Постійний розвиток працівників</h3>
+                            <p class="advantages-item-text">Щомісяця в нашій компанії проходить навчання, де розглядаються різні аспекти з питань контролю шкідників. На базі Спецспектр також впроваджений центр адаптації стажерів (з автоматизованою програмою навчання та здачею тестів) та центр підвищення кваліфікації для вже існуючих працівників.</p>
+                            <button class="advantages-item-read-more">Читати далі</button>                        
+                        </li>
+                        <li class="advantages-item">
+                            <img class="advantages-img" src="./img/advantages/advantages-3.jpg" alt="зображення переваг">
+                            <h3 class="advantages-item-title">CRM система</h3>
+                            <p class="advantages-item-text">Унікальне програмне забезпечення, що дозволяє повністю автоматизувати бізнес та відслідковувати його онлайн. CRM система дозволяє відслідкувати поточний стан справ як зі сторони франчайзі Спецспектр так і зі сторони кожного окремого клієнта.
+                               <br><br> CRM містить звіти планових відвідувань, фотозвіти, технічні інспекції, аналіз тенденцій, звіти аудитів і багато іншого, що спрощує контроль надання послуг та підтримує їх на належному рівні.</p>
+                               <button class="advantages-item-read-more">Читати далі</button>
+                        </li>
+                        <li class="advantages-item">
+                            <img class="advantages-img" src="./img/advantages/advantages-3.jpg" alt="зображення переваг">
+                            <h3 class="advantages-item-title">Документація згідно стандартів</h3>
+                            <p class="advantages-item-text">Ми успішно впроваджуємо дотримання будь-яких міжнародних (ISO 22 000, HACCP, BRC) національних, внутрішніх стандартів у розрізі контролю шкідників. Наші клієнти з вірогідністю 99% успішно проходять перевірки незалежних аудитів на предмет правильності надання послуг контролю шкідників та оформлення відповідної документації.</p>
+                            <button class="advantages-item-read-more">Читати далі</button>
+                        </li>
+                        <li class="advantages-item">
+                            <img class="advantages-img" src="./img/advantages/advantages-3.jpg" alt="зображення переваг">
+                            <h3 class="advantages-item-title">Підтримка франчайзі 24/7</h3>
+                            <p class="advantages-item-text">Наша пускова команда та команда постійної підтримки знаходиться на зв’язку 24/7 аби проконсультувати Вас та надати розгорнуту відповідь на будь-які запитання.
+                            <br><br>В разі отримання франчайзі замовлення, що перевищує рівень його кваліфікації фахівці головного офісу здійснюють виїзд до франчайзі та фізично допомагають у проведенні обробок тощо.</p>
+                            <button class="advantages-item-read-more">Читати далі</button>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </section>
+            <section class="franchisee">
+                <div class="container">
+                    <div class="franchisee-container">
+                        <svg class="franchisee-decor-mob" width="375" height="563" viewBox="0 0 375 563" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M317.63 387.96C304.519 410.464 272.319 419.251 230.45 414.914C188.648 410.584 137.496 393.188 86.9229 363.725C36.3499 334.262 -4.01181 298.344 -28.395 264.116C-52.8177 229.833 -61.056 197.487 -47.9457 174.984C-34.8354 152.48 -2.63468 143.693 39.2343 148.03C81.0354 152.36 132.188 169.756 182.761 199.219C233.334 228.682 273.696 264.6 298.079 298.828C322.502 333.111 330.74 365.457 317.63 387.96Z" stroke="#55C1E1" stroke-opacity="0.19" stroke-width="1.34657" />
+                            <path d="M256.684 454.404C235.394 469.405 202.459 463.984 166.199 442.606C129.997 421.263 90.7348 384.147 57.0239 336.3C23.313 288.454 1.57413 238.991 -6.34144 197.718C-14.2699 156.379 -8.29085 123.541 12.9997 108.54C34.2902 93.5394 67.225 98.96 103.485 120.338C139.687 141.681 178.949 178.798 212.66 226.644C246.371 274.49 268.11 323.954 276.026 365.226C283.954 406.566 277.975 439.404 256.684 454.404Z" stroke="#55C1E1" stroke-opacity="0.19" stroke-width="1.34657" />
+                        </svg>
+                        <svg class="franchisee-decor-des" width="580" height="1346" viewBox="0 0 580 1346" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.5971 221.541C86.1297 238.359 121.768 303.625 133.946 396.609C146.103 489.442 134.76 609.278 96.964 734.077C59.1677 858.875 2.1168 964.868 -59.5043 1035.36C-121.226 1105.96 -187.087 1140.49 -242.619 1123.67C-298.152 1106.85 -333.791 1041.58 -345.968 948.599C-358.126 855.766 -346.782 735.93 -308.986 611.131C-271.19 486.333 -214.139 380.34 -152.518 309.851C-90.7967 239.247 -24.9355 204.722 30.5971 221.541Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="3" />
+                            <path d="M206.019 319.395C249.504 357.81 254.728 431.989 227.08 521.598C199.476 611.063 139.261 715.291 52.9299 813.016C-33.4016 910.74 -129.408 983.35 -214.785 1021.78C-300.301 1060.27 -374.557 1064.23 -418.042 1025.81C-461.528 987.398 -466.752 913.22 -439.103 823.61C-411.499 734.146 -351.285 629.918 -264.953 532.193C-178.622 434.468 -82.6156 361.859 2.76135 323.432C88.2771 284.943 162.533 280.979 206.019 319.395Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="3" />
+                          </svg>
+                          <div class="franchisee-container-wrap">
+                            <h2 class="franchisee-title">Що отримують наші франчайзі?</h2>
+                            <div class="franchisee-container-wrap-add">
+                                <div class="franchisee-container-button">
+                                    <button class="franchisee-button-get getfinmodel-button" type="button">Отримати фінансову модель</button>
+                                    <button class="franchisee-button-get getcontract-button" type="button">Отримати договір</button>
+                                </div>
+                                <p class="franchisee-text">Франчайзі отримують від компанії широкий спектр підтримки та ресурсів для успішного ведення бізнесу. Це включає в себе навчання та підготовку персоналу, надання брендованого обладнання та матеріалів, а також маркетингову підтримку для просування послуг.</p>
+                            </div>
+                          </div>
+                        <ul class="franchisee-list list">
+                            <li class="franchisee-item">
+                                    <p class="franchisee-item-text">1</p>
+                                    <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                        <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                    </svg>
+                                <p class="franchisee-item-description">Допомогу в запуску та роботі франчайзі</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">2</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>
+                                <p class="franchisee-item-description">Робочу модель бізнесу</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">3</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>                                
+                                <p class="franchisee-item-description">Теоретичну та практичну базу надання послуг</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">4</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>
+                                <p class="franchisee-item-description">Інструкції, технології та методи послуг</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">5</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>
+                                <p class="franchisee-item-description">Маркетингову стратегію</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">6</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>
+                                <p class="franchisee-item-description">Автоматизовану систему звітностіі</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">7</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>
+                                <p class="franchisee-item-description">HR стратегію</p>
+                            </li>
+                            <li class="franchisee-item">
+                                <p class="franchisee-item-text">8</p>
+                                <svg class="franchisee-item-decor" width="133" height="125" viewBox="0 0 133 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.1844 104.294C24.0051 99.7003 23.3994 90.8484 26.7197 80.1632C30.0346 69.4953 37.2439 57.0736 47.5678 45.4341C57.8918 33.7947 69.3641 25.1541 79.5601 20.5896C89.7726 16.0176 98.6334 15.5624 103.813 20.1563C108.992 24.7502 109.598 33.6021 106.277 44.2873C102.963 54.9552 95.7532 67.3769 85.4293 79.0163C75.1053 90.6558 63.633 99.2963 53.4371 103.861C43.2246 108.433 34.3637 108.888 29.1844 104.294Z" stroke="#202020" stroke-width="0.357947" />
+                                    <path d="M15.0557 84.9349C12.2598 78.6014 15.3952 70.3013 22.8634 61.9692C30.3195 53.6506 42.0466 45.3592 56.2797 39.076C70.5128 32.7927 84.5412 29.7142 95.7119 29.81C106.901 29.9059 115.146 33.1818 117.942 39.5152C120.738 45.8486 117.603 54.1487 110.135 62.4808C102.678 70.7994 90.9513 79.0908 76.7182 85.3741C62.4851 91.6574 48.4567 94.7359 37.2861 94.6401C26.0973 94.5441 17.8516 91.2683 15.0557 84.9349Z" stroke="#202020" stroke-width="0.357947" />
+                                </svg>
+                                <p class="franchisee-item-description">Проведення аудитів зі сторони франчазера </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="cooperation">
+                <div class="container">
+                    <div class="cooperation-container">
+                        <div class="cooperation-container-img">
+                            <img class="cooperation-img" src="./img/cooperation-img.png" alt="зображення">
+                            <div class="cooperation-img-info">
+                                <p class="cooperation-img-text">За 7500$</p>
+                            </div>
+                        </div>
+                        <div class="cooperation-container-wrap">
+                            <h2 class="cooperation-title">Все необхідне для старту</h2>
+                            <ul class="cooperation-list list">
+                                <li class="cooperation-item">
+                                    <div class="cooperation-item-circle">
+                                        <span class="cooperation-item-number">1</span>
+                                    </div>
+                                    <p class="cooperation-item-text">Простий початок</p>
+                                </li>
+                                <li class="cooperation-item">
+                                    <div class="cooperation-item-circle">
+                                        <span class="cooperation-item-number">2</span>
+                                    </div>
+                                    <p class="cooperation-item-text">Допомога у відкритті</p>
+                                </li>
+                                <li class="cooperation-item">
+                                    <div class="cooperation-item-circle">
+                                        <span class="cooperation-item-number">3</span>
+                                    </div>
+                                    <p class="cooperation-item-text">Особистий куратор</p>
+                                </li>
+                                <li class="cooperation-item">
+                                    <div class="cooperation-item-circle">
+                                        <span class="cooperation-item-number">4</span>
+                                    </div>
+                                    <p class="cooperation-item-text">Повний цикл навчання</p>
+                                </li>
+                            </ul>
+                            <button class="cooperation-button button-connection" type="button">Замовити дзвінок</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                    <div class="partners-container">
+                          <svg class="partners-decor" width="807" height="768" viewBox="0 0 807 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M140.305 636.849C109.701 603.982 110.774 545.949 138.077 478.148C165.332 410.464 218.551 333.55 291.312 263.504C364.072 193.459 442.509 143.627 510.464 119.652C578.537 95.6361 635.585 97.7162 666.189 130.583C696.793 163.449 695.72 221.483 668.418 289.284C641.163 356.967 587.943 433.881 515.183 503.927C442.423 573.973 363.985 623.805 296.031 647.779C227.957 671.796 170.909 669.715 140.305 636.849Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="2.49541" />
+                            <path d="M60.5821 502.583C46.2208 459.724 70.9716 407.401 123.55 357.308C176.041 307.299 255.913 259.889 350.733 226.997C445.554 194.105 537.255 181.998 608.839 188.968C680.542 195.949 731.552 221.991 745.913 264.85C760.275 307.709 735.524 360.032 682.945 410.125C630.454 460.134 550.583 507.545 455.762 540.437C360.942 573.329 269.24 585.435 197.657 578.465C125.953 571.484 74.9434 545.442 60.5821 502.583Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="2.49541" />
+                          </svg>
+                        <div class="partners-container-title">
+                            <h2 class="partners-title">До команди Спецспектр вже встигли приєднатись</h2>
+                            <button class="partners-button button-connection" type="button">Стати партнером</button>
+                        </div>
+                        <ul class="partners-list list">
+                            <li class="partners-item">
+                                <img class="partners-img" src="./img/partners/partners-1.jpg" alt="фото партнерів">
+                                <div class="partners-item-container">
+                                    <p class="partners-item-container-name">Петро Суніцький</p>
+                                    <div class="partners-item-container-wrap">
+                                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 9.5 7C9.5 7.3283 9.43534 7.65339 9.3097 7.95671C9.18406 8.26002 8.99991 8.53562 8.76777 8.76777C8.53562 8.99991 8.26002 9.18406 7.95671 9.3097C7.65339 9.43534 7.3283 9.5 7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5ZM7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 12.25 7 20 7 20C7 20 0 12.25 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0ZM7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7C2 8 2 10 7 16.71C12 10 12 8 12 7C12 5.67392 11.4732 4.40215 10.5355 3.46447C9.59785 2.52678 8.32608 2 7 2Z" fill="white" />
+                                        </svg>
+                                        <p class="partners-item-container-wrap-city">Київ</p>
+                                    </div>
+                                    <p class="partners-item-container-adress">ТОВ «CПЕЦСПЕКТР» <br> вул. Жилянська, 55 Київ 01033</p>
+                                </div>
+                            </li>
+                            <li class="partners-item">
+                                <img class="partners-img" src="./img/partners/partners-2.jpg" alt="фото партнерів">
+                                <div class="partners-item-container">
+                                    <p class="partners-item-container-name">Олег Сидоренко</p>
+                                    <div class="partners-item-container-wrap">
+                                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 9.5 7C9.5 7.3283 9.43534 7.65339 9.3097 7.95671C9.18406 8.26002 8.99991 8.53562 8.76777 8.76777C8.53562 8.99991 8.26002 9.18406 7.95671 9.3097C7.65339 9.43534 7.3283 9.5 7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5ZM7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 12.25 7 20 7 20C7 20 0 12.25 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0ZM7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7C2 8 2 10 7 16.71C12 10 12 8 12 7C12 5.67392 11.4732 4.40215 10.5355 3.46447C9.59785 2.52678 8.32608 2 7 2Z" fill="white" />
+                                        </svg>
+                                        <p class="partners-item-container-wrap-city">Київ</p>
+                                    </div>
+                                    <p class="partners-item-container-adress">ТОВ «CПЕЦСПЕКТР» <br> вул. Жилянська, 55 Київ 01033</p>
+                                </div>
+                            </li>
+                            <li class="partners-item">
+                                <img class="partners-img" src="./img/partners/partners-3.jpg" alt="фото партнерів">
+                                <div class="partners-item-container">
+                                    <p class="partners-item-container-name">Олена Васильченко</p>
+                                    <div class="partners-item-container-wrap">
+                                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 9.5 7C9.5 7.3283 9.43534 7.65339 9.3097 7.95671C9.18406 8.26002 8.99991 8.53562 8.76777 8.76777C8.53562 8.99991 8.26002 9.18406 7.95671 9.3097C7.65339 9.43534 7.3283 9.5 7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5ZM7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 12.25 7 20 7 20C7 20 0 12.25 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0ZM7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7C2 8 2 10 7 16.71C12 10 12 8 12 7C12 5.67392 11.4732 4.40215 10.5355 3.46447C9.59785 2.52678 8.32608 2 7 2Z" fill="white" />
+                                        </svg>
+                                        <p class="partners-item-container-wrap-city">Київ</p>
+                                    </div>
+                                    <p class="partners-item-container-adress">ТОВ «CПЕЦСПЕКТР» <br> вул. Жилянська, 55 Київ 01033</p>
+                                </div>
+                            </li>
+                            <li class="partners-item">
+                                <img class="partners-img" src="./img/partners/partners-4.jpg" alt="фото партнерів">
+                                <div class="partners-item-container">
+                                    <p class="partners-item-container-name">Марія Петрова</p>
+                                    <div class="partners-item-container-wrap">
+                                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 9.5 7C9.5 7.3283 9.43534 7.65339 9.3097 7.95671C9.18406 8.26002 8.99991 8.53562 8.76777 8.76777C8.53562 8.99991 8.26002 9.18406 7.95671 9.3097C7.65339 9.43534 7.3283 9.5 7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5ZM7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 12.25 7 20 7 20C7 20 0 12.25 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0ZM7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7C2 8 2 10 7 16.71C12 10 12 8 12 7C12 5.67392 11.4732 4.40215 10.5355 3.46447C9.59785 2.52678 8.32608 2 7 2Z" fill="white" />
+                                        </svg>
+                                        <p class="partners-item-container-wrap-city">Київ</p>
+                                    </div>
+                                    <p class="partners-item-container-adress">ТОВ «CПЕЦСПЕКТР» <br> вул. Жилянська, 55 Київ 01033</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="partners-button-more button-more" type="button">Дивитись більше</button>
+                    </div>
+                </div>
+            </section>
+            <section class="team">
+                <div class="container">
+                    <div class="team-container">
+                        <div class="team-container-wrap">
+                            <h2 class="team-title">Команда Спецспектр</h2>
+                            <div class="team-container-wrap-button">
+                                <button class="team-button team-button-left" type="button">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 12.7733V10.1067H16L8.66667 2.77333L10.56 0.879999L21.12 11.44L10.56 22L8.66667 20.1067L16 12.7733H0Z" fill="white" />
+                                      </svg>
+                                </button>
+                                <button class="team-button team-button-right" type="button">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 12.7733V10.1067H6L13.3333 2.77333L11.44 0.879999L0.879999 11.44L11.44 22L13.3333 20.1067L6 12.7733H22Z" fill="white" />
+                                      </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="team-list list">
+                            <li class="team-item">
+                                <img class="team-img" src="./img/team/team-1.jpg" alt="зображення команди">
+                                <div class="team-item-container">
+                                    <p class="team-item-container-name">Костянтин</p>
+                                    <p class="team-item-container-position">Куратор</p>
+                                </div>
+                            </li>
+                            <li class="team-item">
+                                <img class="team-img" src="./img/team/team-2.jpg" alt="зображення команди">
+                                <div class="team-item-container">
+                                    <p class="team-item-container-name">Анна</p>
+                                    <p class="team-item-container-position">СЕО</p>
+                                </div>
+                            </li>
+                            <li class="team-item">
+                                <img class="team-img" src="./img/team/team-3.jpg" alt="зображення команди">
+                                <div class="team-item-container">
+                                    <p class="team-item-container-name">Сергій</p>
+                                    <p class="team-item-container-position">Куратор</p>
+                                </div>
+                            </li>
+                            <li class="team-item">
+                                <img class="team-img" src="./img/team/team-4.jpg" alt="зображення команди">
+                                <div class="team-item-container">
+                                    <p class="team-item-container-name">Сергій</p>
+                                    <p class="team-item-container-position">Куратор</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="license">
+                <div class="container">
+                    <div class="license-container">
+                        <div class="license-container-wrap">
+                            <h2 class="license-title">Ліцензії та дозволи</h2>
+                            <p class="license-text">Якість наших робіт підтверджено численними Сертифікатами, а також відгуками наших клієнтів, ознайомитися з якими Ви можете на нашому сайті. 
+                            <br><br> Роботи з дезінфекції, дезінсекції, дератизації проводяться згідно з вимогами ISO 9001 і міжнародного стандарту ISO 22 000: 2005 / HACCP; BRC та вимог інших стандартів</p>
+                        </div>
+                        <ul class="license-list list">
+                            <li class="license-item">
+                                <img class="license-img" src="./img/license/license-1.jpg" alt="зображення ліцензії">
+                                <p class="license-item-text">Ліцензія МінАПУ Серія АВ № 456 273 на проведення фумігаційних робіт на об'єктах фітосанітарного нагляду (карантин рослин), до 2014р.</p>
+                            </li>
+                            <li class="license-item">
+                                <img class="license-img" src="./img/license/license-2.jpg" alt="зображення ліцензії">
+                                <p class="license-item-text">Ліцензія МінАПУ Серія АВ № 456 273 на проведення pest control послгу на об'єктах ветеринарного нагляду</p>
+                            </li>
+                            <li class="license-item">
+                                <img class="license-img" src="./img/license/license-3.jpg" alt="зображення ліцензії">
+                                <p class="license-item-text">Ліцензія МОЗ України Серія АВ №492050 на проведення pest control послгу на об'єктах санітарного нагляду</p>
+                            </li>
+                            <li class="license-item">
+                                <img class="license-img" src="./img/license/license-4.jpg" alt="зображення ліцензії">
+                                <p class="license-item-text">Ліцензія МінАПУ Серія АЕ № 228 874 на проведення фумігаційних робіт на об'єктах фітосанітарного нагляду (карантин рослин), після 2014р.</p>
+                            </li>
+                        </ul>
+                        <button class="license-button-more button-more" type="button">Дивитись більше</button>
+                    </div>
+                </div>
+            </section>
+            <section class="logos">
+                <div class="container">
+                    <div class="logos-container">
+                        <h2 class="logos-title">Партнери які нам  довіряють</h2>
+                        <ul class="logos-list list">
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-1.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-2.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-3.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-4.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-5.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-6.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-7.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-8.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-9.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-10.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-11.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-12.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-13.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-14.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-15.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-16.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-17.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-18.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-19.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-20.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-21.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-22.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-23.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-24.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-25.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-26.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-27.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-28.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-29.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-30.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-31.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-32.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-33.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-34.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-35.svg" alt="зображення логотипу">
+                            </li>
+                            <li class="logos-item">
+                                <img class="logos-item-img" src="/img/logos/logos-36.svg" alt="зображення логотипу">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="connection">
+                <div class="container">
+                    <div class="connection-container">
+                            <div class="connection-container-form">
+                                <p class="connection-title">Давайте зізвон?</p>
+                                <p class="connection-pretitle">Обіцяємо не спамити та не передавати контакти третім особам.</p>
+                                <form class="connection-form">
+                                <div class="connection-input-name">
+                                    <label class="connection-label-text" for="inputName">Ім'я</label>
+                                    <input
+                                    class="connection-input-text text"
+                                    id="inputName"
+                                    name="user-name"
+                                    type="text"
+                                    placeholder="Введіть своє ім'я"
+                                    required
+                                  />
+                                </div>
+                                <div class="connection-input-phone">
+                                    <label class="connection-label-text" for="inputPhone">Телефон</label>
+                                    <input
+                                      class="connection-input-text text"
+                                      id="inputPhone"
+                                      name="user-phone"
+                                      type="tel"
+                                      placeholder="Введіть номер телефону"
+                                      required
+                                    />
+                            </div>
+                              <button
+                                class="connection-button button-connection"
+                                type="submit"
+                                data-modal-open
+                              >Замовити дзвінок</button>
+                            </form>
+                            </div>
+                        <img class="connection-img" src="./img/connection-image.jpg" alt="зображення">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-container-contact-mob">
+                        <p class="footer-contact-address footer-container-text">ТОВ «CПЕЦСПЕКТР» <br> вул. Жилянська, 55, Київ 01033</p>
+                        <div class="footer-contact-connection">
+                            <p class="footer-contact-connection-text footer-container-text">info@spsp.com.ua</p>
+                            <p class="footer-contact-connection-text footer-container-text">+38 067 444 04 58</p>
+                        </div>
+                    </div>
+                    <div class="footer-container-logo">
+                        <img class="footer-logo logo" src="./img/logo-speczspektor-mob.svg" alt="логотип">
+                        <div class="footer-container-wrap">
+                            <div class="footer-container-contact-des">
+                                <p class="footer-contact-address footer-container-text">ТОВ «CПЕЦСПЕКТР» <br> вул. Жилянська, 55, Київ 01033</p>
+                                <div class="footer-contact-connection">
+                                    <p class="footer-contact-connection-text footer-container-text">info@spsp.com.ua</p>
+                                    <p class="footer-contact-connection-text footer-container-text">+38 067 444 04 58</p>
+                                </div>
+                            </div>
+                            <button class="footer-button-connection button-connection" data-modal-open>Передзвоніть мені</button>
+                        </div>
+                    </div>
+                      <svg class="footer-decor-mob" width="228" height="236" viewBox="0 0 228 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M182.943 92.27C186.146 105.066 179.305 123.283 165.477 142.469C151.665 161.632 130.952 181.657 106.61 197.987C82.2683 214.318 58.9276 223.848 40.8729 226.063C22.7959 228.282 10.112 223.163 6.90815 210.368C3.70434 197.572 10.5454 179.354 24.3741 160.168C38.1856 141.006 58.8986 120.981 83.2405 104.65C107.582 88.3197 130.923 78.79 148.978 76.5742C167.055 74.3557 179.739 79.4742 182.943 92.27Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="0.528852" />
+                        <path d="M185.718 140.786C184.099 155.511 172.524 170.062 155.02 181.68C137.522 193.294 114.145 201.942 89.0404 204.855C63.9355 207.767 41.8813 204.39 26.5186 196.588C11.1503 188.784 2.51804 176.577 4.1374 161.852C5.75676 147.127 17.3315 132.576 34.8357 120.958C52.3336 109.344 75.7103 100.696 100.815 97.7832C125.92 94.8706 147.974 98.2481 163.337 106.05C178.705 113.854 187.338 126.06 185.718 140.786Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="0.528852" />
+                      </svg>
+                    <svg class="footer-decor-des" width="680" height="396" viewBox="0 0 680 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M551.339 439.56C527.978 466.738 476.835 480.136 412.582 479.553C348.409 478.971 271.498 464.431 197.09 436.046C122.683 407.661 64.932 370.831 31.6976 334.254C-1.57801 297.633 -10.1182 261.466 13.2423 234.289C36.6029 207.111 87.7463 193.713 151.999 194.296C216.172 194.879 293.083 209.418 367.491 237.803C441.899 266.188 499.649 303.018 532.884 339.595C566.159 376.217 574.699 412.383 551.339 439.56Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="1.43682" />
+                        <path d="M448.063 521.81C412.857 541.314 362.423 538.46 309.194 517.852C255.985 497.252 200.133 458.959 154.294 407.835C108.456 356.712 81.3561 302.49 74.5663 256.173C67.7742 209.839 81.3121 171.544 116.518 152.039C151.725 132.535 202.158 135.389 255.387 155.996C308.597 176.597 364.449 214.89 410.287 266.013C456.126 317.137 483.225 371.359 490.015 417.676C496.807 464.01 483.269 502.305 448.063 521.81Z" stroke="#55C1E1" stroke-opacity="0.21" stroke-width="1.43682" />
+                      </svg>
+                </div>
+            </div>
+        </footer>
+    </div> 
+        <!--MOGAL-->
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close" type="button" data-modal-close>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.46 7L14 12.54V14H12.54L7 8.46L1.46 14H0V12.54L5.54 7L0 1.46V0H1.46L7 5.54L12.54 0H14V1.46L8.46 7Z" fill="#202020" />
+                </svg>
+              </button>
+              <p class="modal-title">Передзвоніть мені</p>
+              <form action="modal-form">
+                <div class="modal-form-input">
+                    <div class="modal-field">
+                        <label class="input-text" for="user-name">Ім'я</label>
+                          <input
+                            class="modal-input"
+                            id="user-name"
+                            name="user-name"
+                            type="text"
+                            placeholder="Введіть своє ім'я"
+                            required
+                          />
+                      </div>
+                      <div class="modal-field">
+                        <label class="input-text" for="user-phone">Телефон</label>
+                          <input
+                            class="modal-input"
+                            id="user-phone"
+                            name="user-phone"
+                            type="tel"
+                            placeholder="Введіть номер телефону"
+                            required
+                          />
+                      </div>
+                </div>
+                <button class="modal-botton button-connection" type="submit">Відправити</button>
+              </form>
+            </div>
+          </div>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+</html>
