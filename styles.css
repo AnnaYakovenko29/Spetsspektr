@@ -275,37 +275,34 @@ body {
 
 .services-item {
     position: relative;
+    width: 343px;
+    height: 208px;
+    position: relative;
 }
 
-.services-item::before {
-    content: attr(data-text); 
+.services-item-container {
     position: absolute;
     bottom: 0;
-    display: block;
     border-radius: 40px 40px 12px 12px;
     padding: 10px;
-    width: 100%;
+    width: 343px;
     height: 47px;
     background: rgba(32, 32, 32, 0.6);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+}
+
+.services-img {
+    border-radius: 12px;
+    width: 343px;
+    height: 208px;
+}
+
+.services-item-text {
     font-family: var(--font-family);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.5;
     color: var(--additional-white);
-}
-
-.services-item::before {
-    content: attr(data-text); 
-}
-
-.services-img {
-    border-radius: 12px;
-    height: 208px;
-    object-fit: contain;
+    text-align: center;
 }
 
 /*================MAP================*/
@@ -415,7 +412,7 @@ body {
     width: 250px;
     height: 199px;
     margin-bottom: 32px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .advantages-item-title {
@@ -700,7 +697,6 @@ body {
 
 .partners-img {
     border-radius: 12px;
-    object-fit: contain;
 }
 
 .partners-item-container {
@@ -1744,10 +1740,15 @@ body {
     }
     
     .license-item {
-        border: 4px solid var(--main-primary-blue);
+
         padding: 32px 24px;
         width: 364px;
         height: 719px;
+    }
+
+    .license-item:hover {
+        border: 4px solid var(--main-primary-blue);
+        transition: border 0.4s ease;
     }
     
     .license-img {
